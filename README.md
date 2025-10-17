@@ -80,31 +80,32 @@ endmodule
 ```
 ## Constraint file for Seven-Segment Display
 ```
-## DIP SWITCHES (SW0-SW3 for BCD input)
-set_property -dict { PACKAGE_PIN V2 IOSTANDARD LVCMOS33 } [get_ports {bcd[0]}]
-set_property -dict { PACKAGE_PIN U2 IOSTANDARD LVCMOS33 } [get_ports {bcd[1]}]
-set_property -dict { PACKAGE_PIN U1 IOSTANDARD LVCMOS33 } [get_ports {bcd[2]}]
-set_property -dict { PACKAGE_PIN T2 IOSTANDARD LVCMOS33 } [get_ports {bcd[3]}]
+set_property -dict {PACKAGE_PIN V2 IOSTANDARD LVCMOS33} [get_ports {bcd[0]}]
+set_property -dict {PACKAGE_PIN U2 IOSTANDARD LVCMOS33} [get_ports {bcd[1]}]
+set_property -dict {PACKAGE_PIN U1 IOSTANDARD LVCMOS33} [get_ports {bcd[2]}]
+set_property -dict {PACKAGE_PIN T2 IOSTANDARD LVCMOS33} [get_ports {bcd[3]}]
 
-## 7-SEGMENT DISPLAY (a,b,c,d,e,f,g,dp)
-set_property -dict { PACKAGE_PIN D7 IOSTANDARD LVCMOS33 } [get_ports {seg[0]}]
-set_property -dict { PACKAGE_PIN C5 IOSTANDARD LVCMOS33 } [get_ports {seg[1]}]
-set_property -dict { PACKAGE_PIN A5 IOSTANDARD LVCMOS33 } [get_ports {seg[2]}]
-set_property -dict { PACKAGE_PIN B7 IOSTANDARD LVCMOS33 } [get_ports {seg[3]}]
-set_property -dict { PACKAGE_PIN A7 IOSTANDARD LVCMOS33 } [get_ports {seg[4]}]
-set_property -dict { PACKAGE_PIN D6 IOSTANDARD LVCMOS33 } [get_ports {seg[5]}]
-set_property -dict { PACKAGE_PIN B5 IOSTANDARD LVCMOS33 } [get_ports {seg[6]}]
-set_property -dict { PACKAGE_PIN A6 IOSTANDARD LVCMOS33 } [get_ports {seg[7]}]
+set_property -dict {PACKAGE_PIN H3 IOSTANDARD LVCMOS33} [get_ports {an[0]}]
+set_property -dict {PACKAGE_PIN J4 IOSTANDARD LVCMOS33} [get_ports {an[1]}]
+set_property -dict {PACKAGE_PIN F3 IOSTANDARD LVCMOS33} [get_ports {an[2]}]
+set_property -dict {PACKAGE_PIN E4 IOSTANDARD LVCMOS33} [get_ports {an[3]}]
 
-## ANODE CONTROL (active-low)
-set_property -dict { PACKAGE_PIN D5 IOSTANDARD LVCMOS33 } [get_ports {an[0]}]
-set_property -dict { PACKAGE_PIN C4 IOSTANDARD LVCMOS33 } [get_ports {an[1]}]
-set_property -dict { PACKAGE_PIN C7 IOSTANDARD LVCMOS33 } [get_ports {an[2]}]
-set_property -dict { PACKAGE_PIN A8 IOSTANDARD LVCMOS33 } [get_ports {an[3]}]
+
+set_property -dict {PACKAGE_PIN F4 IOSTANDARD LVCMOS33} [get_ports {seg[0]}]
+set_property -dict {PACKAGE_PIN J3 IOSTANDARD LVCMOS33} [get_ports {seg[1]}]
+set_property -dict {PACKAGE_PIN D2 IOSTANDARD LVCMOS33} [get_ports {seg[2]}]
+set_property -dict {PACKAGE_PIN C2 IOSTANDARD LVCMOS33} [get_ports {seg[3]}]
+set_property -dict {PACKAGE_PIN B1 IOSTANDARD LVCMOS33} [get_ports {seg[4]}]
+set_property -dict {PACKAGE_PIN H4 IOSTANDARD LVCMOS33} [get_ports {seg[5]}]
+set_property -dict {PACKAGE_PIN D1 IOSTANDARD LVCMOS33} [get_ports {seg[6]}]
+set_property -dict {PACKAGE_PIN C1 IOSTANDARD LVCMOS33} [get_ports {seg[7]}]
+
+
 ```
 ## FPGA Implementation Output
 
-<img width="782" height="540" alt="image" src="https://github.com/user-attachments/assets/6d549830-34b0-4916-9370-fc680e71f881" />
+<img width="692" height="919" alt="image" src="https://github.com/user-attachments/assets/7c8716f7-a274-40bc-870b-6dc416520cef" />
+
 
 
 ---
